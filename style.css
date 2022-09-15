@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: monospace;
+    /* display:flex; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Nav Start*/
+#header{
+    position:fixed;
+    top:0px;
+}
+#header{
+    /* margin: 0; */
+    background-color: rgb(1, 1, 1);
+    height: 60px;
+    width: 100%;
+    padding-top: 15px;
+    color: white;
+    z-index: 1;
+   
+}
+.brs{
+    background-color: rgb(244, 244, 244);
+}
+
+#logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+    color: white;
+}
+
+
+#logo #lastLogo{
+    color: gold;
+}
+
+#logo::first-letter{
+    color: gold;
+}
+
+.nav-bar{
+    float: right;
+    width: 35%;
+    color: white;
+}
+
+.nav-bar ul li{
+    display: inline;
+    justify-content: space-between;
+    margin: 18px;
+    font-size: 18px;
+   
+}
+
+.nav-bar ul li a{
+    color: white;
+}
+
+@media (max-width: 720px){
+    #logo{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    .nav-bar ul li{
+        font-size: 15px;
+        display: flex;
+        height: auto;
+    }
+
+}
+
+.nav-bar ul li a:hover{
+    color:gray;
+    /* font-size: 25px; */
+}
+
+#logo:hover{
+    color:lightskyblue;
+}
+
+/* Nav End*/
+
+/* WelcomePage */
+@media (min-width: 768px){
+.welcomePage{
+    background-color: rgb(231, 231, 231);
+    height: 720px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+}
+
+.welcomePage .main{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    top: 300px;
+    display: block;
+   
+}
+
+
+
+.main h1 {
+    font-size: 10vh;
+}
+.main h3{
+    font-size: 5vh;
+    color: rgb(49, 109, 238);
+}
+
+.underLine1{
+    content: "";
+    margin-top: 2ex;
+    position: absolute;
+    display: block;
+    left: 43%;
+    width: 13.5%;
+    height: 4px;
+    background-color: black;
+    /* margin-bottom: 30px; */
+    margin-top: 40px;
+}
+@media screen {
+    .findMe{
+        padding-top: 50px;
+        width:100%;
+        margin-top: 30px;
+        /* margin-left: 12px; */
+    }
+     
+}
+
+.findMe ul li{
+    display: inline;
+    list-style: none;
+    justify-content: space-between;
+    width: 30px;
+    padding: 10px;
+}
+#twitter{
+    background-color: transparent;
+}
+
+
+#twitter:hover{
+    /* background-color: rgb(33, 151, 230); */
+    width: 3.2%;
+    /* border-radius: 44%; */
+}
+
+#codewars{
+    background-color: transparent;
+}
+
+#codeWars:hover{
+    background-color: rgb(229, 64, 49);
+    width: 3.2%;
+    border-radius: 30%;
+}
+
+#gitHub:hover{
+    /* background-color: rgb(122, 116, 116); */
+    width: 3.2%;
+    border-radius: 50%;
+}
+
+#freeCodeCamp:hover{
+    background-color: rgb(92, 115, 162);
+    width: 3.2%;
+    border-radius: 50%;
+}
+/* 
+
+
+
+/* WelcomePage End*/
+
+/* About Me Start */
+#about .container{
+    background-color: rgb(244, 244, 244);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.aboutLogo{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* width: 50%; */
+    background-color: rgb(244, 244, 244);
+}
+
+.aboutLogo h1{
+    font-size: 4vh;
+}
+
+.underLine{
+    content: "";
+    margin-top: 1ex;
+    position: absolute;
+    display: block;
+    left: 45%;
+    width: 10%;
+    height: 4px;
+    background-color: black;
+}
+
+#about{
+    right: -2em;
+}
+
+#about .container{
+    width: 100%;
+    height: 100%;
+    /* margin: 5px; */
+    /* position: relative; */
+    padding-left: 50px;
+    padding-top: 20px;
+}
+@media (min-width: 768px){
+.myImg{
+    padding-left: 15px;
+    width: 20%;
+ 
+}
+}
+
+#me{
+    border-radius:50%;
+    border-top-left-radius: 75%;
+    border-bottom-left-radius: 75%;
+    border-top-right-radius: 75%;
+    border-bottom-right-radius: 75%;;
+    width: 300px;
+    border: 4px black solid;
+    border-style: groove;
+}
+
+.myImg{
+    position: relative;
+}
+
+.myImg::after{
+    content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+
+
+
+
+.aboutP{
+    padding-top: 20px;
+    font-size:29px;
+    width: 800px;
+    margin-left: 140px;
+}
+
+
+.skills{
+    position: relative;
+}
+
+.skills ul {
+    display: inline-flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* -ms-flex-align: center; */
+    /* justify-content: left; */
+    list-style-position: inside;
+    list-style-type: square;
+    
+}
+
+.skills li{
+    padding: 10px;
+}
+
+.skills1{
+    margin-left: 300px;
+}
+
+
+/* About Me End */
+
+/* Why Start */
+#why{
+    background-color: rgb(231, 231, 231);
+}
+
+.whyLogo{
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 2px;
+    /* width: 50%; */
+    /* background-color: rgb(231, 231, 231); */
+}
+
+.whyLogo h1{
+    font-size: 4vh;
+}
+
+.whyP{
+    height: 300px;
+    width: 100%;
+    /* background-color: rgb(231, 231, 231); */
+    text-align: center;
+    justify-content: center;
+    /* align-items: center;  */
+    /* display: flex; */
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.whyP p{
+    color: black;
+    font-size: 23px;
+    width: 70%;
+}
+/* Why End */
+
+
+/* Project Start */
+#projects{
+    background-color: rgb(244, 244, 244);
+}
+
+.proLogo{
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.pContainer{
+    width: 100%;
+    display: flex;
+    padding: 100px;
+    
+    justify-content: space-around;
+ 
+    /* padding-left: 200px;
+    padding-right: 200px; */
+}
+
+.projectOne img{
+    width: 100%;
+    height: 250px;
+    border: 12px solid rgb(16, 16, 16);
+}
+
+.projectOne{
+    width: 30%;
+    height: 300px;
+    float: left;
+    /* padding-left:200px ; */
+}
+
+.projectOne{
+    position: relative;
+}
+
+
+.projectTwo img{
+    width: 100%;
+    height: 250px;
+    border: 12px solid rgb(16, 16, 16);
+}
+
+.projectTwo{
+    width: 30%;
+    height: 300px;
+    position: relative;
+    float: right;
+    /* padding-right: 200px; */
+}
+
+
+
+.hiddenInfo{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(115, 182, 239);
+    position: absolute;
+    top: 110px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    font-size: 20px;
+}
+
+.hiddenInfo:hover{
+    opacity: 1;
+    transition: 2ms;
+    transition-duration: 2ms;
+}
+
+.hiddenInfo a{
+    padding: 5px;
+    border: 2px solid black;
+    /* border-radius: 40%; */
+    background-color: rgb(11, 11, 11);
+    color: white;
+    text-align: center;
+    opacity: 1;
+}
+
+.hiddenInfoPro2{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(115, 182, 239);
+    position: absolute;
+    top: 110px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    font-size: 20px;
+}
+
+.hiddenInfoPro2:hover{
+    opacity: 1;
+    transition: 2ms;
+    transition-duration: 2ms;
+}
+
+.hiddenInfoPro2 a{
+    padding: 5px;
+    border: 2px solid black;
+    /* border-radius: 40%; */
+    background-color: rgb(11, 11, 11);
+    color: white;
+    text-align: center;
+    opacity: 1;
+}
+
+.projectOne figure figcaption{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(215, 215, 245);
+    padding-top: 5px;
+    margin-top: -5px;
+    padding-bottom: 3px;
+}
+
+.projectTwo figure figcaption{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(215, 215, 245);
+    padding-top: 5px;
+    margin-top: -5px;
+    padding-bottom: 3px;
+}
+
+/* Project End */
+
+
+ /* div{
+    background-color: aqua;
+    border:3px solid rgb(69, 203, 69);
+    border-radius: 30%; 
+    width: 50%;
+    position: absolute;
+    left:350px;
+}  */
+
+@media only screen and (min-width: 768px){
+.contact-page {
+    margin-top: 5vmin;
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
+@media only screen and (min-width: 768px){
+#container {
+    border: solid 3px black;
+    margin: 0 auto;
+    max-width: 650px;
+    max-height: 650px;
+    position: relative;
+    width: 100%;
+}
+}
+@media only screen and (min-width: 768px){
+#contact-title {
+    margin-top: 20px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+}
+}
+
+@media (min-width: 768px){
+form {
+    padding: 45px;
+}
+}
+
+@media (min-width: 768px){
+.message {
+    float: none;
+}}
+
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+
+@media (min-width: 768px){
+.name {
+    float: left;
+    width: 45%;
+}
+}
+user agent stylesheet
+/* div {
+    display: block;
+} */
+
+body {
+    font-family: monospace;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+@media only screen and (min-width: 768px){
+.subject {
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 768px){
+.message {
+    float: none;
+}}
+
+
+
+
+input[type='text'], [type='email'], textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px black;
+    color: black;
+    font-size: 1.500em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+ }
+
+
+ @media only screen and (min-width: 768px){
+ #form_button {
+     background: none;
+     border: solid 2px black;
+     color: black;
+     cursor: pointer;
+     display: inline-block;
+     font-family: Fira Mono, sans-serif;
+     font-size: 14px;
+     font-weight: bold;
+     outline: none;
+     padding: 20px 35px;
+     text-transform: uppercase;
+ }
+}
+
+
+/*Footer */
+.footer{
+    background-color: #000000;
+    padding: 13px;
+   color: white;
+    text-align: center;
+    font-size: large;
+}
+/*Footer */
+.footer .p3{
+    display: inline;
+  
+    text-align: center;
+}
+/*Footer */
+.footer .footer_top{
+    float: right;
+}
